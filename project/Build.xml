@@ -28,7 +28,7 @@
 	<set name="LIBNAME" value="hypsystem"/>
 	<set name="SLIBEXT" value=".lib" if="windows"/>
 	<set name="SLIBEXT" value=".a" unless="windows"/>
-	<set name="SLIBEXT" value=".so" if="webos"/>
+	<set name="SLIBEXT" value=".so" if="webos || android"/>
 	<set name="DEBUGEXTRA" value="-debug" if="fulldebug" />
 
 	<target id="NDLL" output="${LIBPREFIX}${LIBNAME}${MSVC_LIB_VERSION}${DEBUGEXTRA}${LIBEXTRA}" 
